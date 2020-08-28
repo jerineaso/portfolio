@@ -36,10 +36,54 @@ body{
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
+    transition: all .5s ease-in-out;
 }
 
 .active{
     color: #898EA2;
 }
 
- 
+@media screen and (max-width: 768px){
+    
+    .line{
+        width: 23px;
+        height: 3px;
+        background-color: #272267;
+        margin: 5px;
+        border-radius: 7px;
+    }
+
+    .toggle{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 6%;
+        transform: translate(-5%,-6%);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .navbar-links .menu{
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        top: 60px;
+        right: 10%;
+        background-color: #272267;
+    }
+
+    .nav-links{
+        padding: 50px;
+    }
+
+    .nav-links a{
+        color:white;
+        
+    }
+    
+    .navbar-links .menu.is-active{
+        display: none;
+    }
+}
+
