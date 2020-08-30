@@ -94,7 +94,7 @@ body{
 
 .image-svg{
     float: right;
-    margin-right: -50px;
+    margin-right: -40px;
     margin-top: -130px;
 }
 
@@ -104,6 +104,18 @@ body{
     left: 50%;
     transform: translate(-50%,-95%);
     cursor: pointer;
+}
+
+.svg-section{
+    position: absolute;
+    top: 8%;
+    right:0%;
+    z-index: -1;
+    float: right;
+    width: 600px;
+    height: 600px;
+    display: none;
+    transition: all .8s ease-in-out;
 }
 
 
@@ -129,12 +141,15 @@ body{
 
     .navbar-links .menu{
         display: block;
+        padding: 0;
+        text-align: center;
     }
 
     .menu{
         position: absolute;
         top: 55px;
-        right: 10%;
+        right: 0;
+        left: 0;
         height: calc(95vh - 55px);
         background-color: #272267;
     }
