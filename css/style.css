@@ -17,8 +17,8 @@ body{
 }
 
 #logo-img{
-    width: 42px;
-    height: 30px;
+    width: 40px;
+    height: 28px;
 }
 
 .navbar-links ul{
@@ -86,6 +86,26 @@ body{
 .btn:hover{
     background-color: #FFDB0E;
 }
+
+#img{
+    max-width: 100%;
+    object-fit: fill;
+}
+
+.image-svg{
+    float: right;
+    margin-right: -50px;
+    margin-top: -130px;
+}
+
+#next-section{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-95%);
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 768px){
     

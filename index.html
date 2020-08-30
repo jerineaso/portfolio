@@ -33,6 +33,16 @@
     <!--Starting the Home Section-->
     <section id="home">
         <div class="bio">
+            <div class="image-svg">
+                <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" width="577px" height="527px">
+                    <defs>
+                      <pattern id="img" patternUnits="userSpaceOnUse" width="200" height="200">
+                        <image xlink:href="./images/my_image.jpg" x="-25" width="150" height="90" />
+                      </pattern>
+                    </defs>
+                    <polygon points="35.2,88.4 13.3,66.5 13.3,35.5 35.2,13.6 66.2,13.6 88.1,35.5 88.1,66.5 66.2,88.4" fill="url(#img)"/>
+                  </svg>
+            </div>
             <h1 class="same">Hello, I'm Jerin</h1>
             <h1 id="front-end">I'm a front-end web developer</h1>
             <h1 class="same">Based in India.</h1>
@@ -44,7 +54,8 @@ attention & creativity is what defines me. With a bachelor’s<br>
 Degree in computer science I am competent in all aspects of the<br>
 design process.</p>
         </div>
-        <button class="btn">VIEW RESUME</button>    
+        <button class="btn">VIEW RESUME</button>   
+        <a href="#"><img src="./images/scroll down arrow.png" alt="Scroll Down Arrow" id="next-section"></a>
     </section>
     <!--Linking Javascript File-->
     <script src="./javascript/app.js"></script>
