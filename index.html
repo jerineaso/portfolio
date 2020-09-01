@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="I bring an engineering perspective and intuitive user experience to
+    create products that people love to use. Persistence, obsessive
+    attention & creativity is what defines me. With a bachelor’s 
+    Degree in computer science I am competent in all aspects of the
+    design process.">
     <meta name="keywords" content="jerineaso,jerineasoregi,Jerin Easo Regi">
     <meta name="author" content="Jerin Easo Regi">
     <title>Jerin Easo Regi | Front End Developer</title>
@@ -25,8 +29,7 @@
                 <div class="line"></div>
             </div>
             <ul class="menu is-active">
-                <li class="nav-links"><a href="#" class="active">HOME</a></li>
-                <li class="nav-links"><a href="#">ABOUT</a></li>
+                <li class="nav-links"><a href="#home" class="active">HOME</a></li>
                 <li class="nav-links"><a href="#">WORKS</a></li>
                 <li class="nav-links"><a href="#">CONTACT</a></li>
             </ul>
@@ -36,17 +39,20 @@
     <section id="home">
         <div class="bio">
             <div class="image-svg">
-                <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" width="557px" height="507px">
+                <!--SVG Setup for Octagon-->
+                <svg viewBox="0 0 100 100"  width="557px" height="507px">
                     <defs>
                       <pattern id="img" patternUnits="userSpaceOnUse" width="200" height="200">
                         <image xlink:href="./images/my_image.jpg" x="-25" width="150" height="90" />
                       </pattern>
                     </defs>
                     <polygon points="35.2,88.4 13.3,66.5 13.3,35.5 35.2,13.6 66.2,13.6 88.1,35.5 88.1,65.5 66.2,88.4" fill="url(#img)"/>
-                </svg>       
+                </svg>  
+                <!--Hover SVG Elements-->     
                 <object data="./images/Path 32.svg" type="image/svg+xml" class="svg-section"></object>
                 <object data="./images/Path 33.svg" type="image/svg+xml" class="svg-section"></object>         
             </div>
+            <!--Bio-->
             <h1 class="same">Hello, I'm Jerin</h1>
             <h1 id="front-end">I'm a front-end web developer</h1>
             <h1 class="same">Based in India.</h1>
@@ -59,8 +65,13 @@
                 design process.
             </p>
         </div>
-        <button class="btn">VIEW RESUME</button>   
+        <!--Button opening Resume on another tab-->
+        <input type="button" value="VIEW  RESUME" class="btn">  
         <a href="#"><img src="./images/scroll down arrow.png" alt="Scroll Down Arrow" id="next-section"></a>
+    </section>
+    <!--Works Section-->
+    <section id="works">
+
     </section>
     <!--Linking Javascript File-->
     <script src="./javascript/app.js"></script>

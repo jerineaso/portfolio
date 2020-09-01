@@ -67,7 +67,7 @@ body{
 
 .short-bio p{
     color: #898EA2;
-    margin: 50px;
+    margin-left: 52px;
 }
 
 .btn{
@@ -81,6 +81,7 @@ body{
     font-size: 12px;
     margin:-20px 50px;
     transition: all .8s;
+    margin-top: 13px;
 }
 
 .btn:hover{
@@ -132,10 +133,15 @@ body{
     .toggle{
         position: absolute;
         cursor: pointer;
-        right: 5%;
+        right: 7%;
         top: 6%;
         transform: translate(-5%,-6%);
         transition: all 0.5s ease-in-out;
+    }
+
+    #logo-img{
+        position: relative;
+        left: -40%;
     }
 
 
@@ -169,16 +175,56 @@ body{
 
     #home{
         margin: -50px 0px;
-      
     }
+
+    .bio{
+        margin-top: 64px;
+    }
+
+    .short-bio{
+        margin-top: -75px;
+    }
+
+    .short-bio p{
+        margin:0px 37px;
+    }
+
 
     .same{
         font-size: 19px;
+        margin-left: -13px;
+        margin-top: -17px;
     }
 
     #front-end{
-        font-size: 30px;
-        line-height: 25px;
+        font-size: 29px;
+        line-height: 29px;
+        margin-left: -13px;
+        margin-top: 15px;
+    }
+
+    svg{
+       width: 80%;
+       height: auto;
+       margin-left: 13px;
+       margin-top: 54px;
+    }
+
+    .svg-section{
+        width: 85%;
+        visibility: visible;
+        top: -131px;
+        right: 22px;
+    }
+
+    .btn{
+        padding: 8px 13px;
+        margin-left: 35px;
+        margin-top: 10px;
+    }
+
+    #next-section{
+        top: 98%;
+        width: 30%;
     }
 }
-

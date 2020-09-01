@@ -9,10 +9,10 @@ let svgSec = document.querySelectorAll('.svg-section')
 for(i=0;i<links.length;i++){
     console.log(i)
     links[i].addEventListener('mouseenter',() =>displaySvg("block"));
-
     links[i].addEventListener('mouseleave',() =>displaySvg("none"));
 }
 
+//Image Hover
 document.querySelector('.image-svg').addEventListener('mouseenter',() =>displaySvg("block"))
 document.querySelector('.image-svg').addEventListener('mouseleave',() =>displaySvg("none"))
 
@@ -23,4 +23,9 @@ function displaySvg(value){
         svgSec[j].style.display = value
     }
 }
+
+//View a pdf
+document.querySelector('.btn').addEventListener('click',() =>{
+    window.open('./resume/Jerin Easo Regi.pdf',"_blank")
+})
 
