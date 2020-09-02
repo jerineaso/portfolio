@@ -138,7 +138,7 @@ body{
     content: '';
     height: 2px;
     top: 23px;
-    right: -105px;
+    right: -93px;
     background-color: #272267;
     width: 55px;
 }
@@ -177,6 +177,10 @@ body{
     top: -40%;
     left: 80%;
     float: right;
+}
+
+.proj-desc p{
+    max-width: 100%;
 }
 
 .btn2{
@@ -230,7 +234,6 @@ body{
 
     .nav-links a{
         color:white;
-        
     }
     
     .navbar-links .menu.is-active{
@@ -288,7 +291,61 @@ body{
     }
 
     #next-section{
-        top: 98%;
-        width: 30%;
+        top: 96%;
+        width: 9%;
     }
+    /*Projects*/
+
+    #projects{
+        margin-top: 20px;
+    }
+
+    #proj-head{
+        font-size: 1.5rem;
+        margin-left: -43px;
+        margin-top: 36px;
+        min-width: 80%;
+    }
+    .container{
+        margin: 19px 35px 0px -71px;
+    }
+
+    .contain-img {
+        width: 76vw;
+        height: 50vh;
+    }
+    .pro-image {
+        width: 88%;
+        height: 67%;
+        margin: 17px;
+    }
+
+    .proj-head{
+        position: relative;
+        left: 8%;
+        top: -7%;
+        color: #272267;
+        font-weight: 400;
+        font-size: 1.2rem;
+        max-width: 100%;
+    }
+
+    .proj-desc{
+        top: -1%;
+        left: 114%;
+        width: 76vw;
+    }
+
+    .proj-desc p{
+        margin: 17px -3px;
+        max-width: 100%;
+    }
+
+    .btn2{
+        margin-left: -4px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    
+
 }
