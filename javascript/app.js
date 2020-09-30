@@ -1,31 +1,23 @@
 //Navbars Toggle 
-document.querySelector('.toggle').addEventListener('click',() =>{
+document.querySelector('.ham').addEventListener('click',() =>{
     document.querySelector('.menu').classList.toggle('is-active');
 });
 
-//Nav-links Mouseover
-let links = document.querySelectorAll('.nav-links')
-let svgSec = document.querySelectorAll('.svg-section')
-for(i=0;i<links.length;i++){
-    console.log(i)
-    links[i].addEventListener('mouseenter',() =>displaySvg("block"));
-    links[i].addEventListener('mouseleave',() =>displaySvg("none"));
-}
+//Form Submission 
+$("#submit-form").submit((e)=>{
+    e.preventDefault()
+    $.ajax({
+        url:"https://script.google.com/macros/s/AKfycbzKCXNOvTR8q2NnJZx_GHczpMkxCOEZ9Q1RuvOs_Q/exec",
+        data:$("#submit-form").serialize(),
+        method:"post",
+        success:function (response){
+            alert("Form submitted successfully")
+            window.location.reload()
+            //window.location.href="https://google.com"
+        },
+        error:function (err){
+            alert("Something Error")
 
-//Image Hover
-document.querySelector('.image-svg').addEventListener('mouseenter',() =>displaySvg("block"))
-document.querySelector('.image-svg').addEventListener('mouseleave',() =>displaySvg("none"))
-
-
-function displaySvg(value){
-    for(j=0;j<svgSec.length;j++){
-        console.log(j)
-        svgSec[j].style.display = value
-    }
-}
-
-//View a pdf
-document.querySelector('.btn').addEventListener('click',() =>{
-    window.open('./resume/Jerin Easo Regi.pdf',"_blank")
+        }
+    })
 })
-

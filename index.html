@@ -15,80 +15,87 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <!--Favicon-->
     <link rel="icon" href="./images/logo.png" type="image/gif" sizes="16x16">
+    <!-- Linking Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-    <!--Starting with the Nav Bar Setup-->
-    <div class="navbar">
-        <div class="logo">
-            <a href="#home"><img src="./images/logo.png" alt="Logo_Portfolio"  id="logo-img"></a>
-        </div>
-        <div class="navbar-links">
-            <div class="toggle">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <ul class="menu is-active">
-                <li class="nav-links"><a href="#home" class="active">HOME</a></li>
-                <li class="nav-links"><a href="#projects">PROJECTS</a></li>
-                <li class="nav-links"><a href="#">CONTACT</a></li>
-            </ul>
-        </div>
-    </div>
-    <!--Starting the Home Section-->
     <section id="home">
-        <div class="bio">
-            <div class="image-svg">
-                <!--SVG Setup for Octagon-->
-                <svg viewBox="0 0 100 100"  width="557px" height="507px">
-                    <defs>
-                      <pattern id="img" patternUnits="userSpaceOnUse" width="200" height="200">
-                        <image xlink:href="./images/my_image.jpg" x="-25" width="150" height="90" />
-                      </pattern>
-                    </defs>
-                    <polygon points="35.2,88.4 13.3,66.5 13.3,35.5 35.2,13.6 66.2,13.6 88.1,35.5 88.1,65.5 66.2,88.4" fill="url(#img)"/>
-                </svg>  
-                <!--Hover SVG Elements-->     
-                <object data="./images/Path 32.svg" type="image/svg+xml" class="svg-section"></object>
-                <object data="./images/Path 33.svg" type="image/svg+xml" class="svg-section"></object>         
+        <header>
+            <div class="logo"><img src="./images/logo.png" alt=""></div>
+            <nav>
+                <ul class="menu">
+                    <li class="active"><a href="#home">HOME</a></li>
+                    <li><a href="#projects">PROJECT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                <div class="ham"><i class="fa fa-bars fa-2x active"></i></div>
+            </nav>
+        </header>    
+        <main>
+            <div class="details">
+                <div class="bio">
+                    <h2>Hello, I'm Jerin</h2>
+                    <h1 id="bio">I'm a Front End Developer</h1>
+                    <h2>Based in india.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi reprehenderit consectetur tempora nisi excepturi. Soluta nulla ut blanditiis veritatis tempore alias officiis dolorem animi ratione quidem. Dolorum natus molestiae incidunt.</p>
+                    <br>
+                    <a href="./resume/JERIN EASO REGI.pdf" target="_blank" class="btn">View Resume</a>
+                </div>
+                <div class="hero">
+                    <img class="model-right my_image" src="./images/my_image.jpg" alt="my_image">
+                    <img class="model-right svgs"src="./images/Path 32.svg" alt="svg">
+                    <img src="./images/Path 33.svg" alt="svg" class="model-right svgs">
+                </div>
+                
             </div>
-            <!--Bio-->
-            <h1 class="same">Hello, I'm Jerin</h1>
-            <h1 id="front-end">I'm a front-end web developer</h1>
-            <h1 class="same">Based in India.</h1>
-        </div>
-        <div class="short-bio">
-            <p>I bring an engineering perspective and intuitive user experience to<br>
-                create products that people love to use. Persistence, obsessive<br>
-                attention & creativity is what defines me. With a bachelor’s<br> 
-                Degree in computer science I am competent in all aspects of the<br>
-                design process.
-            </p>
-        </div>
-        <!--Button opening Resume on another tab-->
-        <input type="button" value="VIEW  RESUME" class="btn">  
-        <a href="#"><img src="./images/scroll down arrow.png" alt="Scroll Down Arrow" id="next-section"></a>
+            <a href="#projects"><img src="./images/scroll down arrow.png" alt="scrollDown" id="scrollDown"></a>
+        </main>
     </section>
-    <!--Works Section-->
     <section id="projects">
-        <div id="proj-head">PROJECTS</div>
-        <div class="container">
-            <div class="contain-img"> 
-                <img src="./images/404.png" alt="Projects 1" class="pro-image">
-                <h1 class="proj-head">Exploring a new<br> way for young<br> backpackers to travel.</h1>
-            </div>
+        <div class="proj-main">
+            <h2 class="proj-sub">PROJECTS</h2>
+        </div>
+        <div class="proj">
+            <div class="proj-head"></div>
             <div class="proj-desc">
-                <p>I bring an engineering perspective and intuitive user experience to<br>
-                    create products that people love to use. Persistence, obsessive<br>
-                    attention & creativity is what defines me. With a bachelor’s<br> 
-                    Degree in computer science I am competent in all aspects of the<br>
-                    design process.
+                <div class="proj-descrip"><h2>HellO i'M jerin</h2></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt suscipit a
+                    explicabo libero sunt iure fugiat officiis veritatis qui laborum provident nulla
+                    porro illum quis dignissimos, dolorum vel repudiandae ipsam.
                 </p>
-                <input type="button" value="VIEW  PROJECT" class="btn btn2" disabled>      
+                <a href="" target="_blank" class="btn">View Project</a>
             </div>
         </div>
-        </section>
+    </section>
+    <section id="contact" class="contacts">
+        <main>
+            <h2 class="proj-main cnt">CONTACT</h2>
+            <div class="input">
+                <div class="input-mail">
+                    Lorem ipsum dolor sit amet.Eos soluta fugit delectus? Ut cupiditate nulla minus ipsam? Sequi, non nisi delectus quasi consequatur dignissimos veniam vero quisquam ipsa necessitatibus? Corrupti!
+                    <div class="social-media">
+                            <ul>
+                                <li class="social"><a href="https://github.com/jerineaso"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a></li>
+                                <li class="social"><a href="https://www.instagram.com/_easochayen_/"><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a></li>
+                                <li class="social"><a href="https://www.linkedin.com/in/jerineasoregi/"><i class="fa fa-2x fa-linkedin"></i></a></li>
+                            </ul>
+                     </div>
+                </div>
+                <div class="input-fields">
+                    <form id="submit-form" action="">
+                        <input type="text" id="fname" name="name" class="inputField" placeholder="Name" required="required"><br>
+                        <input type="email" id="lname" name="email" class="inputField" placeholder="Email" required="required"><br>
+                        <textarea name="message" id="subject" cols="30" rows="10" class="inputField" placeholder="Write Message"></textarea><br>
+                        <input type="button" class="btn msg" value="Send Message">
+                    </form>
+                </div>
+            </div>
+        </main>
+    </section>
     <!--Linking Javascript File-->
     <script src="./javascript/app.js"></script>
+    <!-- Ajax Library for Form -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>
