@@ -331,14 +331,18 @@ nav ul li a{
 
 @media only screen and (max-width: 768px) {
 
+    nav ul{
+       display: none;
+    }
+
     nav .menu.is-active{
         position: absolute;
         left: 5%;
         right: 5%;
         top: 10%;
         background-color: #272267;
-        display: block;
         text-align: center;
+        display: block;
         padding: 0;
         z-index: 2;
         visibility: visible;
