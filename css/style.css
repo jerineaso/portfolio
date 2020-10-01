@@ -1,6 +1,10 @@
 /* Linked Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -60,6 +64,9 @@ main{
 /* Home Section */
 
 /* Navbar */
+#home{
+    background: #F9FAFF;
+}
 header{
     min-height: 10vh;
     width: 90%;
@@ -136,7 +143,6 @@ nav ul li a{
 .svgs{
     width: 400px;
     height: 400px;
-    z-index: -1;
 }
 
 .btn{
@@ -147,9 +153,17 @@ nav ul li a{
     font-weight: 300;
     margin: 4px 2px;
     cursor: pointer;
-    background-color: white;
     border: 1px solid var(--main-btn-color);
     text-transform: uppercase;
+    transition: .5s all;
+}
+
+.btn:hover{
+    animation: buttonAnimate .8s ease-out;
+}
+
+.res{
+    background-color: #F9FAFF;
 }
 
 #scrollDown{
@@ -188,12 +202,16 @@ nav ul li a{
 .proj-head{
     width: 500px;
     height: 430px;
-    background-color: #272267;
+    background-color: #FFE4E3;
 }
 
 .proj-desc{
     max-width: 50%;
     margin: auto 10px;
+}
+
+.proj-descrip h2{
+    margin-left: -70px;
 }
 
 /* Contact Section */
@@ -246,13 +264,17 @@ nav ul li a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .input-mail{
-    max-width: 40%;
+    max-width: 45%;
     color: white;
     margin-top: -5px;
+}
+
+.input-mail a{
+    color: var(--main-txt-color);
 }
 
 .inputField{
@@ -288,6 +310,18 @@ nav ul li a{
     color: #ffffff;
 }
 
+.up{
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    background: var(--main-btn-color);
+}
+
+.fa-angle-double-up:before {
+    content: "\f102";
+    color: var(--section-bg-color);
+}
 
 /* Large Devices */
 
@@ -388,13 +422,16 @@ nav ul li a{
 
     .proj-desc{
         max-width: 100%;
-        margin: -25px auto;
+        margin: auto;
     }
 
     .proj-desc p{
         margin-top: -35px;
     }
     
+    .proj-descrip h2{
+        margin-left: 0px;
+    }
 
     .social{
         visibility: visible;
@@ -424,19 +461,27 @@ nav ul li a{
         padding: 0px 20px 0px 30px;
     }
 
+    .bio{
+        margin-top:30px;
+    }
+
     .bio h2{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    .bio p{
+        line-height: 25px;
     }
     
     #bio{
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
 
     .proj-head {
         display: block;
         width: 80%;
         height: 274px;
-        margin: -20px auto;
+        margin: 20px auto;
     }
 
     .proj-desc{
@@ -450,24 +495,39 @@ nav ul li a{
 
     .proj-desc p{
         max-width: 100%;
-        line-height: 20px;
-        margin-top: -15px;
+        line-height: 25px;
+        margin:0px 0px 25px 0px;
     }
 
     .proj-descrip h2{
         font-size: 1.5rem;
-        margin-top: 35px;
+        margin-top: 50px;
     }
     .cnt{
-        margin-top: 50px;
+        margin-top: 80px;
     }
 
     .input-mail {
-        margin-top: -90px;
+        margin-top: -50px;
     }
 
     .inputField {
-        padding: 0;
+        padding: 10;
         margin: 0px 0px 7px 0px;
+    }
+
+    .up{
+        top: 7%;
+    }
+}
+
+/* Button Animation */
+
+@keyframes buttonAnimate{
+    from{
+        background-color: #FFE4E3;
+    }
+    to{
+        background-color: #FFDB0E;
     }
 }
