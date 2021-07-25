@@ -466,7 +466,7 @@ nav ul li a{
     }
 
     .bio h2{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
     .bio p{
@@ -474,14 +474,19 @@ nav ul li a{
     }
     
     #bio{
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
     .proj-head {
         display: block;
         width: 80%;
         height: 274px;
-        margin: 20px auto;
+        margin: 0px auto;
+    }
+
+    .proj-sub{
+        font-size: 1.8rem;
+        margin: 15px 0 0 0;
     }
 
     .proj-desc{
@@ -500,11 +505,12 @@ nav ul li a{
     }
 
     .proj-descrip h2{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         margin-top: 50px;
     }
     .cnt{
         margin-top: 80px;
+        font-size: 1.8rem;
     }
 
     .input-mail {
@@ -514,6 +520,10 @@ nav ul li a{
     .inputField {
         padding: 10;
         margin: 0px 0px 7px 0px;
+    }
+
+    .input-fields{
+        margin: 40px 0;
     }
 
     .up{
