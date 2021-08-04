@@ -22,40 +22,40 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <section id="home">
-        <header>
+    <section id="home">     
+        <nav>
             <div class="logo"><img src="./images/logo.png" alt=""></div>
-            <nav>
-                <ul class="menu">
-                    <li class="active"><a href="#home">HOME</a></li>
-                    <li><a href="#projects">PROJECT</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-                <div class="ham"><i class="fa fa-bars fa-2x active"></i></div>
-            </nav>
-        </header>    
+            <ul class="menu">
+                <li class="links"><a class="active" href="#home">HOME</a></li>
+                <li class="links"><a href="#projects">PROJECT</a></li>
+                <li class="links"><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="ham"><i class="fa fa-bars fa-lg active"></i></div>
+        </nav>    
         <main>
             <div class="details">
                 <div class="bio">
                     <h2>Hello, I'm Jerin</h2>
                     <h1 id="bio">I'm a Front End Developer</h1>
-                    <h2>Based in india.</h2>
+                    <h2>Based in India.</h2>
                     <p>I bring an engineering perspective and intuitive user experience to
                         create products that people love to use. Persistence, obsessive
                         attention & creativity is what defines me. With a bachelor’s 
                         Degree in computer science I am competent in all aspects of the
                         design process.</p>
-                    <br>
                     <a href="./resume/JERIN EASO REGI.pdf" target="_blank" class="btn res">View Resume</a>
                 </div>
                 <div class="hero">
                     <img class="model-right my_image" src="./images/my_image.jpg" alt="my_image">
-                    <img class="model-right svgs" src="./images/Path 32.svg" alt="svg">
-                    <img src="./images/Path 33.svg" alt="svg" class="model-right svgs">
-                </div>
-                
+                    <div class="svg">
+                        <img class="model-right svgs" src="./images/Path 32.svg" alt="svg">
+                        <img src="./images/Path 33.svg" alt="svg" class="model-right svgs">
+                    </div>
+                </div>  
             </div>
-            <a href="#projects"><img src="./images/scroll down arrow.png" alt="scrollDown" id="scrollDown"></a>
+            <div class="scroll">
+                <a href="#projects"><img src="./images/scroll down arrow.png" alt="scrollDown" id="scrollDown"></a>
+            </div>
         </main>
     </section>
     <section id="projects">
@@ -63,14 +63,22 @@
             <h2 class="proj-sub">PROJECTS</h2>
         </div>
         <div class="proj">
-            <div class="proj-head"></div>
+            <div class="proj-head">
+                <img src="./images/work1.png" alt="" srcset="" class="work">
+            </div>
             <div class="proj-desc">
-                <div class="proj-descrip"><h2>On Work</h2></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt suscipit a
-                    explicabo libero sunt iure fugiat officiis veritatis qui laborum provident nulla
-                    porro illum quis dignissimos, dolorum vel repudiandae ipsam.
-                </p>
-                <a href="" target="_blank" class="btn" aria-disabled="true">View Project</a>
+                <div class="proj-descrip">
+                    <h2>TodoApp_ReactJs</h2>
+                </div>
+                <div class="proj-right">
+                    <p>ToDo List App is a kind of app that generally used to maintain
+                         our day-to-day tasks or list everything that we have to do, 
+                         with the most important tasks at the top of the list, and the 
+                         least important tasks at the bottom. ... We can add more tasks 
+                         at any time and delete a task that is completed.
+                    </p>
+                    <a href="https://reactjs-todos-app1.herokuapp.com/" target="_blank" class="btn" aria-disabled="true">View Project</a>
+                </div>
             </div>
         </div>
     </section>
