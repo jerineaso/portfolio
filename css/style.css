@@ -186,11 +186,14 @@ main{
 }
 
 .proj-head{
-    width: 300px;
     height: auto;
     background-color: #FFE4E3;
     margin-top: 20px;
     padding: 20px;
+}
+
+.head2{
+    background-color: #CBF2FF;
 }
 
 .proj-desc{
@@ -251,6 +254,11 @@ main{
 
 .input-mail{
     color: white;
+}
+
+.input-mail a{
+    color: #898EA2;
+    font-weight: 600;
 }
 
 .social-media ul{
@@ -316,7 +324,7 @@ main{
     }
 
     .proj-head{
-        width: 380px;
+        /* width: 380px; */
         height: auto
     }
 
@@ -349,7 +357,7 @@ main{
     }
 
     .proj-head{
-        width: 580px;
+        /* width: 580px; */
         height: auto
     }
 
