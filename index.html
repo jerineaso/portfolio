@@ -119,34 +119,39 @@
                     <form id="submit-form" action="">
                         <input type="text" id="fname" name="name" class="inputField" placeholder="Name" required="required"><br>
                         <input type="email" id="lname" name="email" class="inputField" placeholder="Email" required="required"><br>
+                        <select name="country" id="country">
+                            <option class="values" value="australia">Australia</option>
+                            <option class="values" value="India">India</option>
+                            <option class="values" value="usa">USA</option>
+                            <option class="values" value="dubai">DUBAI</option>
+                        </select>
                         <textarea name="message" id="subject" cols="30" rows="10" class="inputField" placeholder="Write Message"></textarea><br>
-                        <input type="button" class="btn msg" value="Send Message">
+                        <input type="submit" class="btn msg" value="Send Message">
                     </form>
                 </div>
             </div>
         </main>
     </section>
-    <!--Linking Javascript File-->
-    <script src="./javascript/app.js"></script>
     <!-- Form Submission  -->
     <script>
         $("#submit-form").submit((e)=>{
-        e.preventDefault()
-        $.ajax({
-            url:"https://script.google.com/macros/s/AKfycbzKCXNOvTR8q2NnJZx_GHczpMkxCOEZ9Q1RuvOs_Q/exec",
-            data:$("#submit-form").serialize(),
-            method:"post",
-            success:function (response){
-                alert("Form submitted successfully")
-                window.location.reload()
-                //window.location.href="https://google.com"
-            },
-            error:function (err){
-                alert("Something Error")
-
-            }
-        })
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbz76Usp2R-0sUEAXsRWEDurDP0-AJPiZKlciIIL2bOYp8Cw2jhS39a46RMvag58ng6a/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
         })
     </script>
+    <!--Linking Javascript File-->
+    <script src="./javascript/app.js"></script>
 </body>
 </html>

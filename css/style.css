@@ -296,6 +296,23 @@ main{
     color: #898EA2;
     margin-top: 20px;
 }
+
+#country{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FFDB0E;
+    outline: none;
+    padding-bottom: 10px;
+    width: 90%;
+    color: white;
+    margin: 12px 0;
+}
+
+.values{
+    background-color: #FFDB0E;
+    color: #252934;
+    border-radius: 0;
+}
 /* Button Animation */
 
 @keyframes buttonAnimate{
