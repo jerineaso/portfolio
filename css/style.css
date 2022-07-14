@@ -307,12 +307,12 @@ main{
     outline: none;
     padding-bottom: 10px;
     width: 90%;
-    color: white;
+    color: #898EA2;
     margin: 12px 0;
 }
 
-.values{
-    background-color: #FFDB0E;
+.opt{
+    background-color: #FFE4E3;
     color: #252934;
     border-radius: 0;
 }
