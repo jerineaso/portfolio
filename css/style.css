@@ -68,6 +68,7 @@ nav{
 
 .menu li a{
     font-weight: 600;
+    color: var(--main-nav-color);
 }
 
 .menu li .active{
@@ -100,6 +101,7 @@ main{
 .bio h2{
     font-size: 18px;
     margin: 0;
+    margin-top: 40px;
     color: var(--main-nav-color);
     font-weight: 500;
 }
@@ -190,6 +192,7 @@ main{
     background-color: #FFE4E3;
     margin-top: 20px;
     padding: 20px;
+    width: 580px;
 }
 
 .head2{
