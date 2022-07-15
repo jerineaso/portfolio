@@ -8,4 +8,4 @@ Website is created with:
 * CSS3
 * JavaScript
 
-![alt text]()
+![Portfolio](https://github.com/jerineaso/portfolio/blob/master/screenshots/screencapture-portfolio-jerin-herokuapp-2022-07-15-15_37_20.png)
