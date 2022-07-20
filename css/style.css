@@ -216,6 +216,9 @@ main{
 .work{
     max-width: 100%;
 }
+
+
+
 /* Contact Section */
 
 .contacts {
@@ -332,6 +335,11 @@ main{
 @media screen and (max-width:399px){
     .proj-head{
         width: 280px;
+        padding: 10px;
+    }
+
+    #country {
+        width: 100%;
     }
 }
 
@@ -350,8 +358,9 @@ main{
     }
 
     .proj-head{
-        /* width: 380px; */
-        height: auto
+        width: 380px;
+        height: auto;
+        padding: 10px;
     }
 
     .inputField{
@@ -383,7 +392,7 @@ main{
     }
 
     .proj-head{
-        /* width: 580px; */
+        width: 580px;
         height: auto
     }
 
